@@ -1,0 +1,83 @@
+*{margin: 0em;padding: 0em;border:none;list-style:none;text-decoration:none;}
+body{background:rgb(255,255,245);width:100%;}
+.bigdiv{width:100%;height:100%;background:rgb(255,255,245);}
+label{display:inline-block;}
+.right_bar{background:url(../images/mark_arrow_02.gif) no-repeat 2em center;width:100%;height:10%;line-height:3em;font-size:1em;text-indent:4em;border-bottom:0.1em solid #ccc;}
+.right_detail_bar{background:url(../images/mark_arrow_03.gif) no-repeat 2em center;width:100%;height:10%;line-height:3em;font-size:1em;text-indent:4em;border-bottom:0.1em solid #ccc;}
+
+.right_detail{width:100%;height:80%;}
+.right_p{width:96%;height:7.6%;margin-left:2em;background:rgb(204,204,197);text-indent:2em;line-height:1.5em;}
+
+.right_u{height:7.6%;margin-left:2em;background:rgb(240,240,240);line-height:1.5em;border:0.08em solid #000;border-bottom:none;}
+.right_u .right_li{float:left;width:17%;height:100%;border-right:0.08em solid #000;padding-left:2em;}
+.right_u .right_li_top{float:left;width:9%;height:100%;padding-left:2em;}
+.right_u .right_li_bot{float:left;width:19%;height:100%;padding-left:2em;}
+.secondli{border-left:0.08em solid #000;}
+
+.right_u_detail{width:96%;height:7.6%;margin-left:2em;background:rgb(255,255,245);line-height:1.5em;border:0.08em solid #000;border-bottom:none;}
+.right_u_detail .right_li{float:left;width:17%;height:100%;text-align:center;border-right:0.08em solid #000;}
+.right_u_detail .right_li_top{float:left;width:9%;height:100%;text-align:center;}
+.right_u_detail .right_li_bot{float:left;width:19%;height:100%;padding-left:2em;}
+
+.bot{border-top:0.08em solid #000;padding:0;}
+.btnSpan{float:right;height:1.5em;line-height:1.5em;}
+.btnClass{width:4em;height:2em;line-height:1.5em;border:0.08em solid #ccc;background:rgb(255,255,245);}
+
+#modifyUserDiv{text-align:center;margin-left:auto;margin-right:auto;}
+
+.p_btn{border-top:0.1em solid #ccc;text-align:center;padding-top:1em;}
+.p_btn .modifyBtn{width:6em;height:2em;}
+
+
+
+
+/* 新定义样式 */
+ul,li{white-space:nowrap;}
+.tree_div{padding-left:1em;font-size:0.8em;padding-top:1em;}
+.tree_div a{color:#000;}
+.tree{padding-left:2.5em;}
+.hide{display:none;}
+
+
+.table{margin-left:2em;border-left:0.08em solid #000;border-right:0.08em solid #000;width:96%;border-collapse:collapse;}
+.table tr th{border-top:0.08em solid #000;border-right:0.08em solid #000;text-align:center;background:rgb(240,240,240);height:1.5em;}
+.table tr td{border-top:0.08em solid #000;border-right:0.08em solid #000;text-align:center;height:1.5em;}
+
+
+.qry_p{padding-left:2em;margin-bottom:1em;}
+.qry_p #queryItem{border:0.08em solid #000;width:20em;height:1.5em;line-height:1.5em;font-size:1em;}
+.qry_p span{height:1.3em;}
+
+
+.input300{width:30em;border:0.08em solid #ccc;}
+.input200{width:20em;border:0.08em solid #ccc;height:1.7em;line-height:1.7em;}
+.input100{width:10em;border:0.08em solid #ccc;}
+.input60{width:6em;border:0.08em solid #ccc;}
+.select100{width:10em;border:0.08em solid #ccc;}
+.marginTop{margin-top:2em;}
+.textAlignLeft{text-align:left;}
+.textAlignRight{text-align:right;}
+.label40{width:4em;text-align:right;}
+.label100{width:10em;text-align:right;}
+.label200{width:20em;text-align:right;}
+.label210{width:21em;}
+.button40{width:4em;height:2em;line-height:1.5em;border:0.08em solid #ccc;padding-left:1.5em;}
+.button80{width:8em;height:2em;line-height:1.5em;border:0.08em solid #ccc;}
+.padddingLeft{padding-left:1.5em;}
+
+.span100{height:1em;display:block;}
+
+.fontSizeB{font-size:1.1em;}
+.table1{width:100%;}
+
+.line{width:100%;border-bottom:0.1em solid #ccc;margin-bottom:2em;}
+
+.add{background:rgb(255,255,245) url(../images/edit_add.png) no-repeat 0.2em center;}
+.del{background:rgb(255,255,245) url(../images/edit_remove.png) no-repeat 0.2em center;}
+.mod{background:rgb(255,255,245) url(../images/pencil.png) no-repeat 0.2em center;}
+.qry{background:rgb(255,255,245) url(../images/search.png) no-repeat 0.2em center;}
+.back{background:rgb(255,255,245) url(../images/undo.png) no-repeat 0.2em center;}
+.close{background:rgb(255,255,245) url(../images/cancel.png) no-repeat 0.2em center;}
+.upload{background:rgb(255,255,245) url(../images/upload.png) no-repeat 0.2em center;}
+
+.botTd{text-align:left;padding-left:25em;}

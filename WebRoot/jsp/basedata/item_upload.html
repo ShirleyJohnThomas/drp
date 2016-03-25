@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>物料维护</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	  <script type="text/javascript" src="../js/common.js"></script>
+		<script language="javascript">
+
+		</script>
+	</head>
+
+	<body>
+		<p class="right_detail_bar">基础数据管理>>物料维护>>上传物料图片</p><br>
+		<form name="itemForm" target="_self" id="itemForm">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td height="29">
+							<div align="right">
+								物料代码:&nbsp;
+							</div>
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td height="26">
+							<div align="right">
+								物料名称:&nbsp;
+							</div>
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td height="26">
+							<div align="right">
+								物料规格:&nbsp;
+							</div>
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td height="26">
+							<div align="right">
+								物料型号:&nbsp;
+							</div>
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td height="26">
+							<div align="right">
+								类别:&nbsp;
+							</div>
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td height="26">
+							<div align="right">
+								计量单位:&nbsp;
+							</div>
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td height="74">
+							<div align="right">
+								图片:&nbsp;
+							</div>
+						</td>
+						<td>
+							<img src="../images/default.gif" width="85" height="49">
+						</td>
+					</tr>
+					<tr>
+						<td width="40%" height="29">
+							<div align="right">
+								<font color="red">*</font>选择图片:&nbsp;
+							</div>
+						</td>
+						<td width="60%">
+							<input name="fileName" type="file" class="input200" size="40" maxlength="40">
+						</td>
+					</tr>
+				</table>
+				<p class="p_btn marginTop">
+					<input type="button" name="addBtn" id="addBtn" class="button40 upload" value="上传" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="backBtn" id="backBtn" class="button40 back" value="返回" onclick="history.go(-1);" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+				</p>
+		</form>
+	</body>
+</html>

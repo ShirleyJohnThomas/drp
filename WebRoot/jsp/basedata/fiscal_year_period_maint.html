@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+	<title>会计核算期间维护</title>
+	<link rel="stylesheet" href="../css/drp.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		//添加用户
+		$('#add').click(function(){
+			window.self.location = "fiscal_year_period_add.html";	
+		});
+		//修改用户
+		$('#mod').click(function(){
+			window.self.location = "fiscal_year_period_modify.html";	
+		});		
+		
+		
+	});
+	
+
+</script>
+	</head>
+
+	<body>
+	<div class="bigdiv">
+		<p class="right_bar">基础数据管理>>会计核算期间维护</p><br>
+		<div class="right_detail">
+			<p class="right_p">查询列表</p>
+			<form id="myform" name="myform">
+				<table class="table">
+					<tr>
+						<th>选择</td>
+						<th>核算年</td>
+						<th>核算月</td>
+						<th>开始日期</td>
+						<th>结束日期</td>
+						<th>核算期状态</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="sinCheck"></td>
+						<td>2015</td>
+						<td>01</td>
+						<td>2015-01-01</td>
+						<td>2015-02-01</td>
+						<td>可用</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				<p class="right_p bot">
+					<span class="btnSpan">
+						<input class="btnClass" type="button" value="|<<" name="firstPage" id="firstPage" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+						<input class="btnClass" type="button" value="<" name="prevPage" id="prevPage" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+						<input class="btnClass" type="button" value=">" name="nextPage" id="nextPage" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+						<input class="btnClass" type="button" value=">>|" name="lastPage" id="lastPage" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+						<input class="button40 add" type="button" value="添加" name="add" id="add" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+						<input class="button40 mod" type="button" value="修改" name="mod" id="mod" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+				  </span>
+				  共 xx 页      当前第  <font color="red">x</font>  页
+				</p>
+				
+			</form>
+			
+		</div>
+	</div>
+	</body>
+</html>

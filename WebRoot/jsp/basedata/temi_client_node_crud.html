@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<title>终端客户维护</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//添加区域
+				$('#addBtn').click(function(){
+					window.self.location = "temi_client_node_add.html";	
+				});
+				//修改区域
+				$('#modBtn').click(function(){
+					window.self.location = "temi_client_node_modify.html";	
+				});
+				//添加终端客户
+				$('#addTemiBtn').click(function(){
+					window.self.location = "temi_client_add.html";	
+				});
+				
+			});
+		
+		</script>
+	</head>
+
+	<body>
+		<p class="right_bar">基础数据管理>>终端客户维护</p><br>
+		<div id="modifyUserDiv">
+			<form>
+				<label class="label100">当前区域名称:</label><input class="input200" type="text" name="areaName" id="areaName">
+				<p class="p_btn marginTop">
+					<input type="button" name="addBtn" id="addBtn" class="button80 add" value="添加区域" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="delBtn" id="delBtn" class="button80 del" value="删除区域" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="modBtn" id="modBtn" class="button80 mod" value="修改区域" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="addTemiBtn" id="addTemiBtn" class="button80 add padddingLeft" value="添加终端客户" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+				</p>
+			</form>
+	  </div>
+	</body>
+</html>

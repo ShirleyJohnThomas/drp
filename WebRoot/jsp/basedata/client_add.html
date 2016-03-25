@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<title>添加分销商</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//返回
+				$('#backBtn').click(function(){
+					window.self.location = "client_node_crud.html";	
+				});
+				
+				
+			});
+		
+		</script>
+	</head>
+
+	<body>
+		<p class="right_detail_bar">基础数据管理>>分销商维护>>添加分销商</p><br>
+		<div id="modifyUserDiv">
+			<form>
+				<label class="label100"><font color="red">*</font>分销商代码:</label><input class="input100" type="text" name="clientNo" id="clientNo">
+				<span id="clientNoErr" class="span100"></span>
+				<label class="label100"><font color="red">*</font>分销商名称:</label><input class="input100" type="text" name="clientName" id="clientName">
+				<span id="clientNameErr" class="span100"></span>
+				<label class="label100"><font color="red">*</font>分销商类型:</label>
+				<select class="select100" name="clientType" id="clientType">
+					<option>一级分销商</option>
+					<option>二级分销商</option>
+					<option>三级分销商</option>
+					<option>总部</option>
+				</select>
+				<span id="clientTypeErr" class="span100"></span>
+				<label class="label100">银行帐号:</label><input class="input100" type="text" name="bankNo" id="bankNo">
+				<span id="bankNoErr" class="span100"></span>
+				<label class="label100">联系电话:</label><input class="input100" type="text" name="contactTel" id="contactTel">
+				<span id="contactTelErr" class="span100"></span>
+				<label class="label100">联系地址:</label><input class="input100" type="text" name="address" id="address">
+				<span id="addressErr" class="span100"></span>
+				<label class="label100">邮编:</label><input class="input100" type="text" name="zip" id="zip">
+				<span id="zipErr" class="span100"></span>
+				<p class="p_btn marginTop">
+					<input type="button" name="addBtn" id="addBtn" class="button40 add" value="添加" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="backBtn" id="backBtn" class="button40 back" value="返回" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+				</p>
+			</form>
+	  </div>
+	</body>
+</html>

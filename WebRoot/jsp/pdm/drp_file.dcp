@@ -1,0 +1,10 @@
+[ConnectionProfile]
+ConnectionType=JDBC
+Dbms=MySQL
+DisableBind=0
+Driver=com.mysql.jdbc.Driver
+JarFiles=E:\mysql-connector-java-5.1.18-bin.jar
+LogId=root
+LogPassword=yezi8087
+TrimSpaces=0
+URL=jdbc:mysql://182.254.155.234:3306/drp

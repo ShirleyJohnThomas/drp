@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<title>添加</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+			});
+		
+		</script>
+	</head>
+
+	<body>
+		<p class="right_detail_bar">统计/报表管理>>分销商级别分布图</p><br>
+		<div id="modifyUserDiv">
+			<form>
+				<label>分销大区:</label>
+				<select class="select100">
+					<option checked>--全部--</option>
+					<option>华北区</option>
+					<option>东北区</option>
+					<option>华南区</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label>分销省:</label>
+				<select class="select100">
+					<option checked>--全部--</option>
+					<option>山东省</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="qryType" checked>饼图
+				<input type="radio" name="qryType">柱状图&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" name="qry" id="qry" class="button40 qry" value="查询" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+			</form>
+	  </div>
+	  <p class="line marginTop"></p>
+	  <div align="center">
+	  	<img src="../images/client_level_chart.jpg" height="250px" width="400px">
+	  </div>
+	  
+	</body>
+</html>

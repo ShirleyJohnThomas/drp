@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<title>修改</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//返回
+				$('#backBtn').click(function(){
+					window.self.location = "item_maint.html";	
+				});
+				
+				
+			});
+		
+		</script>
+	</head>
+
+	<body>
+		<p class="right_detail_bar">基础数据管理>>物料维护>>修改</p><br>
+		<div id="modifyUserDiv">
+			<form>
+				<table class="table1">
+					<tr>
+						<td class="textAlignRight">物料代码:</td>
+						<td class="textAlignLeft"><input type="text" class="input60"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>物料名称:</td>
+						<td class="textAlignLeft"><input type="text" class="input100"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight">物料规格:</td>
+						<td class="textAlignLeft"><input type="text" class="input100"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight">物料型号:</td>
+						<td class="textAlignLeft"><input type="text" class="input100"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>类别:</td>
+						<td class="textAlignLeft">
+							<select name="typeSel" class="input60">
+								<option>医疗器械</option>
+								<option>中成药</option>
+								<option>西药</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>计量单位:</td>
+						<td class="textAlignLeft">
+							<select name="typeSel" class="input60">
+								<option>盒</option>
+								<option>片</option>
+								<option>箱</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+				<p class="line marginTop"></p>
+				<table class="table1">
+					<tr>
+						<td class="botTd"><input type="button" class="button40 mod" id="addBtn" value="修改" onmouseover="mouseover(this)" onmouseout="mouseout(this)">&nbsp;<input type="button" class="button40 back" id="backBtn" value="返回" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></td>
+					</tr>
+				</table>
+			</form>
+	  </div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<title>终端客户维护</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//修改终端客户
+				$('#modBtn').click(function(){
+					window.self.location = "temi_client_modify.html";	
+				});
+				//查看详细信息
+				$('#viewBtn').click(function(){
+					window.self.location = "temi_client_detail.html";	
+				});
+				
+				
+			});
+		
+		</script>
+	</head>
+
+	<body>
+		<p class="right_bar">基础数据管理>>终端客户维护</p><br>
+		<div id="modifyUserDiv">
+			<form>
+				<label class="label100">当前终端客户名称:</label><input class="input200" type="text" name="areaName" id="areaName">
+				<p class="p_btn marginTop">
+					<input type="button" name="modBtn" id="modBtn" class="button80 mod padddingLeft" value="修改终端客户" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="delBtn" id="delBtn" class="button80 del padddingLeft" value="删除终端客户" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="viewBtn" id="viewBtn" class="button80 qry padddingLeft" value="查看详细信息" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+				</p>
+			</form>
+	  </div>
+	</body>
+</html>

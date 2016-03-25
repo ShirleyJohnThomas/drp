@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<style type="text/css">
+	
+		</style>
+		<script language="JavaScript">
+			function display(id) {
+				var li="li"+id;
+				var img="img"+id;
+				var image1="image"+id;
+				if($("#"+li).css("display")=="none"){
+					$("#"+img).attr("src","../images/minus.gif");
+					$("#"+image1).attr("src","../images/openfold.gif");
+					$("#"+img).attr("alt","隐藏");
+				}else{
+					$("#"+img).attr("src","../images/plus.gif");
+					$("#"+image1).attr("src","../images/closedfold.gif");
+					$("#"+img).attr("alt","展开");
+				}
+				$("#"+li).toggle();
+			}
+		</script>
+	</head>
+	<body>
+		<div class="tree_div">
+			<ul>
+				<li>
+					<img src="../images/plus.gif" id="img1" onclick="display('1')" alt="展开">
+					<img src="../images/closedfold.gif" id="image1" onclick="display('1')">
+					<a href="client_node_crud.html" target="clientDispAreaFrame">所有分销商</a>
+				</li>
+				<li class="tree hide" id="li1">
+					<ul>
+						<li>
+							<img src="../images/plus.gif" id="img2" onclick="display('2')" alt="展开">
+							<img src="../images/closedfold.gif" id="image2" onclick="display('2')">
+							<a href="client_node_crud.html" target="clientDispAreaFrame">华北区</a>
+						</li>
+						<li class="tree hide" id="li2">
+							<ul>
+								<li>
+									<img src="../images/plus.gif" id="img3" onclick="display('3')" alt="展开">
+									<img src="../images/closedfold.gif" id="image3" onclick="display('3')">
+									<a href="client_node_crud.html" target="clientDispAreaFrame">北京市</a>
+								</li>
+								<li class="tree hide" id="li3">
+									<ul>
+										<li>							
+											<img src="../images/minus.gif">
+							        <img src="../images/openfold.gif">
+							        <a href="client_crud.html" target="clientDispAreaFrame">北京医药股份有限公司</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<img src="../images/minus.gif">
+							<img src="../images/openfold.gif">
+							<a href="client_node_crud.html" target="clientDispAreaFrame">东北区</a>
+						</li>
+						<li>
+							<img src="../images/minus.gif">
+							<img src="../images/openfold.gif">
+							<a href="client_node_crud.html" target="clientDispAreaFrame">华南区</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<title>添加</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<link rel="stylesheet" href="../css/easyui.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//返回
+				$('#backBtn').click(function(){
+					window.self.location = "fiscal_year_period_maint.html";	
+				});
+				
+				
+			});
+		
+		</script>
+	</head>
+
+	<body>
+		<p class="right_detail_bar">基础数据管理>>会计核算期间维护>>添加</p><br>
+		<div id="modifyUserDiv">
+			<form>
+				<table class="table1">
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>核算年:</td>
+						<td class="textAlignLeft"><input type="text" class="input100"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>核算月:</td>
+						<td class="textAlignLeft"><input type="text" class="input100"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>开始日期:</td>
+						<td class="textAlignLeft"><input type="text" class="easyui-datebox input100" value="new Date()"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>结束日期:</td>
+						<td class="textAlignLeft"><input type="text" class="easyui-datebox input100" value="new Date()"></td>
+					</tr>
+					<tr>
+						<td class="textAlignRight"><font color="red">*</font>是否可用:</td>
+						<td class="textAlignLeft"><input type="checkbox"></td>
+					</tr>
+				</table>
+				<p class="line marginTop"></p>
+				<table class="table1">
+					<tr>
+						<td class="botTd"><input type="button" class="button40 add" id="addBtn" value="添加" onmouseover="mouseover(this)" onmouseout="mouseout(this)">&nbsp;<input type="button" class="button40 back" id="backBtn" value="返回" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></td>
+					</tr>
+				</table>
+			</form>
+	  </div>
+	</body>
+</html>

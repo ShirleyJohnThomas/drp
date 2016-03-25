@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+		<title>添加</title>
+		<link rel="stylesheet" href="../css/drp.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//返回
+				$('#backBtn').click(function(){
+					window.self.location = "user_maint.html";	
+				});
+				
+			});	
+		</script>
+	</head>
+
+	<body>
+		<p class="right_detail_bar">系统管理>>用户维护>>添加</p><br>
+		<div id="modifyUserDiv">
+			<form>
+				<label class="label100"><font color="red">*</font>用户代码:</label><input class="input200" type="password" name="userNo" id="userNo">
+				<span id="userNoErr" class="span100"></span>
+				<label class="label100"><font color="red">*</font>用户名称:</label><input class="input200" type="pwdInput" name="userName" id="userName">
+				<span id="userNameErr" class="span100"></span>
+				<label class="label100"><font color="red">*</font>密码:</label><input class="input200" type="pwdInput" name="pwd" id="pwd">
+				<span id="pwdErr" class="span100"></span>
+				<label class="label100">联系电话:</label><input class="input200" type="pwdInput" name="tel" id="tel">
+				<span id="telErr" class="span100"></span>
+				<label class="label100">email:</label><input class="input200" type="pwdInput" name="email" id="email">
+				<span id="emailErr" class="span100"></span>
+				<p class="p_btn">
+					<input type="button" name="addBtn" id="addBtn" class="button40 add" value="添加" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+					<input type="button" name="backBtn" id="backBtn" class="button40 back" value="返回" onmouseover="mouseover(this)" onmouseout="mouseout(this)">	
+				</p>
+			</form>
+	  </div>
+	</body>
+</html>
